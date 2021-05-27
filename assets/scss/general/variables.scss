@@ -1,0 +1,41 @@
+// fonts
+@font-face {
+    font-family: 'roboto';
+    src: url('~/assets/fonts/roboto/Roboto-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'roboto-medium';
+    src: url('~/assets/fonts/roboto/Roboto-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'roboto-bold';
+    src: url('~/assets/fonts/roboto/Roboto-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+$font-primay: 'roboto';
+$font-second: 'roboto-medium';
+$font-third: 'roboto-bold';
+
+//font size
+$fs-small: 1.2rem;
+$fs-normal: 1.6rem;
+$fs-primary: 1.8rem;
+$fs-big: 2rem;
+$fs-bigger: 2.4rem;
+$fs-biggest: 3rem;
+
+
+// colors variables
+$white: #ffffff;
+$black: #000000;
+$dark: #181818;
+$blue: #6a7dfe;
+$red: #d00505;
+
+
+
+$cl-primary: $white;
+$cl-second: $black;
+$cl-third: $dark;
+$cl-fourth: $blue;
+$cl-fifth: $red;

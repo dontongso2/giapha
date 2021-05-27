@@ -1,0 +1,25 @@
+{
+  "name": "GiapHa-Auto",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "bootstrap-vue": "^2.17.3",
+    "core-js": "^3.6.5",
+    "jquery": "^3.6.0",
+    "nuxt": "^2.14.6",
+    "nuxt-validate": "^1.0.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "fibers": "^5.0.0",
+    "sass": "^1.34.0",
+    "sass-loader": "^10.2.0"
+  }
+}

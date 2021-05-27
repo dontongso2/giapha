@@ -1,0 +1,10 @@
+.theme-light {
+    @import '../general/variables.scss';
+    @import '../general/global.scss';
+    
+    // components
+    @import '../components/Navbar.scss';
+    
+    // pages
+    @import '../pages/login.scss';
+}

@@ -1,0 +1,42 @@
+.navbar-container {
+    .navbar-menu {
+        height: 94px;
+        padding: 1em 4em;
+        background-color: $cl-third;
+        display: flex;
+        align-items: center;
+        .logo {
+            height: 100%;
+            width: fit-content;
+            background-color: $cl-primary;
+            border-radius: 50%;
+            img {
+                height: 100%;
+                width: auto;
+            }
+        }
+        .menu {
+            display: flex;
+            width: 100%;
+            li {
+                color: $cl-primary;
+                text-transform: uppercase;
+                margin-left: 1.5rem;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    content: '';
+                    width: 0;
+                    height: 1px;
+                    background: $cl-primary;
+                    transition: all .5s;
+                }
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

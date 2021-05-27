@@ -1,0 +1,46 @@
+.login {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #3F5EFB 0%, #FC466B 100%);
+    // background-image: url('/haha.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 5% 0;
+    &-container {
+        max-width: 400px;
+        width: 100%;
+        background: $cl-primary;
+        padding: 50px;
+        text-align: center;
+        border-radius: 10px;
+        margin-left: 15%;
+        min-height: 70vh;
+        .text-error {
+            float: left;
+        }
+        h1 {
+            font-size: $fs-biggest;
+            margin-top: 10px;
+        }
+        img {
+            width: 60px;
+            margin-top: 20px;
+        }
+        input {
+            font-size: $fs-small;
+        }
+        button {
+            margin-top: 45px;
+        }
+        .link-signup {
+            padding-top: 100px;
+            a {
+                color: $cl-second;
+                &:hover {
+                    color: $cl-fourth;
+                }
+            }
+        }
+    }
+}

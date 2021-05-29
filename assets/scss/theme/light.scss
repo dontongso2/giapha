@@ -4,7 +4,11 @@
     
     // components
     @import '../components/Navbar.scss';
+    @import '../components/carousel/Brands.scss';
+    @import '../components/IntroBrand.scss';
+    @import '../components/Car.scss';
     
     // pages
     @import '../pages/login.scss';
+    @import '../pages/home.scss';
 }

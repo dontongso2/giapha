@@ -38,10 +38,46 @@ li {
     min-height: 100vh;
 }
 
+.page {
+    padding-top: 94px;
+    background-color: $cl-third;
+}
+
 // global class
+
 .text-error {
     font-size: 11px;
     color: $cl-fifth;
+}
+
+svg.exagon {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    transition: stroke .3s ease-out;
+    * {
+        transition: stroke .3s ease-out;
+    }
+    .background {
+        stroke: $cl-primary;
+    }
+    .foreground {
+        stroke: $cl-primary;
+        fill: none;
+    }
+    &:hover {
+        .background {
+            stroke: $cl-third;
+            fill: $cl-primary;
+        }
+        .foreground {
+            stroke: $cl-third;
+        }
+    }
+}
+
+.full-height {
+    height: calc(max(100vh - 94px));
 }
 
 .inp-cus {

@@ -1,4 +1,8 @@
 .navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
     .navbar-menu {
         height: 94px;
         padding: 1em 4em;
@@ -37,6 +41,13 @@
                     width: 100%;
                 }
             }
+            li.active::after {
+                width: 100%;
+            }
+        }
+        .li-name li {
+            color: white;
+            white-space: normal;
         }
     }
 }

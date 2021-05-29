@@ -64,6 +64,7 @@ export default {
             this.email === this.users[i].email &&
             this.password === this.users[i].password
           ) {
+            this.$store.commit('login', this.users[i]);
             this.makeToast("success", "Success!", `Welcome ${this.users[i].name}!`);
             setTimeout(() => {
               this.$router.push("/");

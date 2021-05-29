@@ -1,0 +1,44 @@
+.intro-brand {
+    width: 100%;
+    padding: 4rem;
+    background-color: $cl-primary;
+    &-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: $cl-primary;
+        .col-md-6 {
+            max-height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .images-container {
+            .img-item {
+                width: 49%;
+                padding: 10px;
+                display: inline-block;
+                img {
+                    height: auto;
+                    object-fit: cover;
+                    object-position: center center;
+                    width: 100%;
+                }
+            }
+            .img-item:nth-child(3n + 1){
+                width: 100%;
+            }
+        }
+        .content-container {
+            padding: 0 3rem;
+            h2 {
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+            p {
+                margin-bottom: .5rem;
+                font-size: 1.1rem;
+                line-height: 1.8rem;
+            }
+        }
+    }
+}

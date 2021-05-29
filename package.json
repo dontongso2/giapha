@@ -15,7 +15,8 @@
     "jquery": "^3.6.0",
     "nuxt": "^2.14.6",
     "nuxt-validate": "^1.0.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "vue-owl-carousel": "^2.0.3"
   },
   "devDependencies": {
     "fibers": "^5.0.0",

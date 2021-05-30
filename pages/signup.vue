@@ -123,6 +123,9 @@ export default {
       return this.$store.state.users;
     },
   },
+  mounted() {
+        this.makeToast("info", "Hint!", "This website is using Vuex store, after sign up please do not reload for the best experience.", true);
+  },
   methods: {
     async handleSubmit() {
       const isValid = await this.$validator.validate();
@@ -141,11 +144,12 @@ export default {
         }, 2000);
       }
     },
-    makeToast(variant = "danger", title = "", content = "") {
+    makeToast(variant = "danger", title = "", content = "", noClose = false) {
       this.$bvToast.toast(content, {
         title: title,
         variant: variant,
         solid: true,
+        noAutoHide: noClose
       });
     },
   },

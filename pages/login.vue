@@ -73,13 +73,18 @@ export default {
           }
         }
         this.makeToast("danger", "Error!", "Email or password was wrong!");
+        this.makeToast("info", "Hint!", "You can create new account or use email: giapha@gmail.com password: Hahuygiap95", true);
       }
+      else
+        this.makeToast("info", "Hint!", "You can create new account or use this email: giapha@gmail.com password: Hahuygiap95", true);
+
     },
-    makeToast(variant = "danger", title = "", content = "") {
+    makeToast(variant = "danger", title = "", content = "", noClose = false) {
       this.$bvToast.toast(content, {
         title: title,
         variant: variant,
         solid: true,
+        noAutoHide: noClose
       });
     },
   },

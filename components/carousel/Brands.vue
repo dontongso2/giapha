@@ -1,5 +1,5 @@
 <template>
-  <div v-if="brands.length > 0" class="carousel-brands full-height">
+  <div v-if="brands.length > 0" id="brands" class="carousel-brands full-height">
     <client-only>
       <carousel
         :autoplay="true"

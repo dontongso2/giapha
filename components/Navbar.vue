@@ -1,16 +1,15 @@
 <template>
     <div class="navbar-container">
         <div class="navbar-menu">
-            <nuxt-link to="/" class="logo">
+            <nuxt-link to="/" class="logo menu-link">
                 <img src="/images/logo.svg" alt="">
             </nuxt-link>
             <ul class="menu">
-                <li><nuxt-link to="/brands">brands</nuxt-link></li>
-                <li><nuxt-link to="dealership">dealerships</nuxt-link></li>
-                <li><nuxt-link to="motosport">motosport</nuxt-link></li>
-                <li><nuxt-link to="pre-owned">pre-owned</nuxt-link></li>
-                <li class="ml-auto"><nuxt-link to="about-us">about us</nuxt-link></li>
-                <li v-if="!profile || !profile.name"><nuxt-link to="/login">Login</nuxt-link></li>
+                <li class="menu-link"><nuxt-link :class="isbrands ? 'nuxt-link-active' : ''" :to="{path: '/',hash:'#brands'}">brands</nuxt-link><span class="border-bot"></span></li>
+                <li class="menu-link"><nuxt-link to="/dealership">dealerships</nuxt-link><span class="border-bot"></span></li>
+                <li class="menu-link ml-auto"><nuxt-link to="/blog">blog</nuxt-link><span class="border-bot"></span></li>
+                <li class="menu-link"><nuxt-link to="/about-us">about us</nuxt-link><span class="border-bot"></span></li>
+                <li v-if="!profile || !profile.name"><nuxt-link to="/login">Login</nuxt-link><span class="border-bot"></span></li>
             </ul>
             <ul class="ml-3 li-name">
                 <li v-if="profile && profile.name">{{profile.name}}</li>
@@ -20,23 +19,26 @@
 </template>
 <script>
 export default {
-    mounted() {
-        this.activeLink();
+    data() {
+        return {
+            isbrands: false,
+        }
     },
     computed: {
         profile() {
             return this.$store.state.profile;
+        },
+        thisRoute() {
+            return this.$route.path;
         }
     },
-    methods: {
-        activeLink() {
-            let els = $('ul.menu').find('li');
-            els.click(function () {
-                let _this = $(this);
-                els.removeClass('active');
-                _this.addClass('active');
-            })
+    watch: {
+        thisRoute(newVal) {
+            if(newVal.includes('brands'))
+                this.isbrands = true;
+            else
+                this.isbrands = false
         }
-    }
+    },
 }
 </script>

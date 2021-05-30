@@ -5,6 +5,9 @@ html, * {
 }
 html {
     font-size: 16px;
+    @media screen and (max-width: 1024px) {
+        font-size: 10px;
+    }
 }
 
 a { 
@@ -40,10 +43,18 @@ li {
 
 .page {
     padding-top: 94px;
-    background-color: $cl-third;
+    background-color: $cl-sixth;
+    min-height: calc(max(100vh - 94px));
 }
 
+.home-enter-active, .home-leave-active { transition: opacity .3s; }
+.home-enter, .home-leave-active { opacity: 0; }
+
 // global class
+.bg-white {
+    background-color: $cl-primary;
+}
+
 
 .text-error {
     font-size: 11px;
@@ -159,5 +170,20 @@ svg.exagon {
     transition: all .4s;
     &:hover {
         background: linear-gradient(132deg, #3fb8fb 0%, #b915ef 100%);
+    }
+}
+.btn-square {
+    border: 1px solid $cl-sixth;
+    background-color: $cl-primary;
+    color: $cl-third;
+    padding: .8rem;
+    min-width: 11rem;
+    display: inline-block;
+    text-align: center;
+    transition: all .3s ease-out;
+    &:hover {
+        border: 1px solid $cl-sixth;
+        background-color: $cl-third;
+        color: $cl-sixth;
     }
 }

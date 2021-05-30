@@ -166,6 +166,38 @@ export default function () {
                     <p>The history of ‘Lamborghini Automobili’ officially starts in 1963. Nevertheless, we must consider the far-off roots of this event, and they are the roots of Ferruccio Lamborghini. Born in 1916, this capable, impetuous, strong-willed Taurus was the leading character in the foundation of the company and the early phases of its extraordinary history.</p><p>By the time he decided to build a factory of luxury sports cars, Ferruccio was already a very wealthy man. In the period following World War II, he founded his tractor factory, which he launched with energy and determination, creating a major point of reference in this industry. Other businesses followed, and he amassed his fortune at the perfect time, before his fiftieth birthday. By the early Sixties, Lamborghini was a powerful and successful man who knew exactly what he wanted, but when he said he would build a super sports car to compete with Ferrari, many people thought he was mad. Constructing that kind of car was viewed as an unexplainable extravagance, a hazardous leap in the dark, and something that would squander his fortune without ever turning a profit.</p><p>He started working on this project in late 1962, and by May 1963 he had already founded ‘ Automobili Ferruccio Lamborghini’, buying a large plot of land in Sant’Agata Bolognese, about 25 kilometres from Bologna, to build a new large and ultramodern factory. Because of the experience he had gained with his other companies, he was in a position to set up the best facilities for his purpose: a very functional structure that, at the time, was unrivalled in its field. The enormous and well-let central building was adjacent to the office building, so that the management could constantly monitor the production situation. This was ideal for Lamborghini, who would often roll up his shirtsleeves and go to work on the cars personally when he saw something that wasn’t done just the way he wanted.</p>
                     `
                 },
+            ],
+            blogs: [
+                {
+                    id: 1,
+                    title: 'LAMBORGHINI COUNTACH: DESIGN THAT MADE HISTORY',
+                    date: '27 MAY 2021',
+                    mainImg: '/images/blogs/main1.webp',
+                    contents: [
+                        { subImg: '/images/blogs/sub1-1.webp', content: 'There are works of art that always remain contemporary, and the shape of the Countach is one of them.” These are the words of Mitja Borkert, Head of Design of Lamborghini, who added, “Its design is made of perfect proportions, characterized by a very pure and essential style. Its distinguishing trait is given by a single longitudinal line that visually connects its front with its rear. From the stylistic viewpoint, it is a perfect inspiration, because even if we modify the rest, it takes form as an element of visual continuity between past and present. It is the summa of the DNA of all of Lamborghini’s design, the tradition of the stylistic language from the origins up until present day.'},
+                        { subImg: '/images/blogs/sub1-2.webp', content: 'Low to the ground and wide, the front view of the Countach features diagonal lines on the front hood that are also found on that of the engine compartment, which make it immediately recognizable even from a distance. The same shape of the passenger compartment, low and square, combined with the classic slant of the windshield, contributed to characterizing the design of the various models that, starting from the Countach, followed one another. Precisely these shapes have remained unaltered over the years, to which the so peculiar and characteristic styling of the side windows is added, making a Lamborghini recognizable even at first glance.'},
+                    ]
+                },
+                {
+                    id: 2,
+                    title: 'NEW HURACÁN SUPER TROFEO EVO2: PURE ADRENALINE',
+                    date: '26 MAY 2021',
+                    mainImg: '/images/blogs/main2.webp',
+                    contents: [
+                        { subImg: '/images/blogs/sub2-1.jpg', content: 'The Huracán Super Trofeo EVO2 makes the design of the previous generations more extreme, heralding stylistic elements that will make their debut on the roads in the forthcoming years. The front changes radically, featuring new combination lights and the pronounced “omega” lip that reinforces the styling bond with the Huracán STO. The “air curtain” intakes that optimize air flow are also unprecedented.'},
+                        { subImg: '/images/blogs/sub2-2.jpg', content: 'The steel front discs have been increased from 380 to 390 mm. The new calipers can house pads with a new design and a larger surface to optimize performance and fuel consumption. The propulsion is entrusted to the 5.2-liter V10 intake engine that delivers up to 620 CV, to be managed with a sequential six-gear X-Trac gearbox and matched with rear wheel drive.'},
+                    ]
+                },
+                {
+                    id: 3,
+                    title: 'LAMBORGHINI ANNOUNCES THE SECOND EDITION OF THE REAL RACE',
+                    date: '20 MAY 2021',
+                    mainImg: '/images/blogs/main3.webp',
+                    contents: [
+                        { subImg: '/images/blogs/sub3-1.jpg', content: 'The Real Race, which attracted over 2500 drivers from 109 countries in its first year, is offering a new global approach this year, with racing drivers who will compete both in the traditional Grand Prix and in three Endurance races to win an experience at the Lamborghini headquarters in Italy and the chance to become the first Lamborghini Official Sim Driver.'},
+                        { subImg: '/images/blogs/sub3-2.jpg', content: 'The Real Race reinforces Lamborghini’s commitment in the world of eSports following its partnership with the leading game brands, such as Rocket League and Asphalt 9: Legends.'},
+                    ]
+                },
             ]
         }),
         mutations: {

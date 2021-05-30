@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        <div class="d-flex flex-wrap">
+        <div class="d-flex flex-wrap justify-content-between">
             <div class="footer-left">
                 <ul class="d-flex">
                     <li>
@@ -14,9 +14,7 @@
                 All rights reserved. VAT no. IT 325432465342</p>
             </div>
             <div class="footer-right d-flex">
-                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                <span>*This website was create without business purpose <br/> If any owner of content/background used in this website is unhappy,please contact us via mail giapha@gmail.com</span>
             </div>
         </div>
     </footer>
@@ -40,6 +38,10 @@ li a {
 p {
     pointer-events: none;
     user-select: none;
+}
+span {
+    font-size: 10px;
+    margin-top: auto;
 }
 
 </style>

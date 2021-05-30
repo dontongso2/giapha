@@ -15,6 +15,21 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ]
   },
+  router: {
+    scrollBehavior(to) {
+      if (to.hash) {
+        setTimeout(() => {
+          if(document.querySelector(to.hash)) {
+            return window.scrollTo({
+              top: (document.querySelector(to.hash).offsetTop - 94),
+              behavior: 'smooth'
+            })
+          }
+        }, 500);
+      }
+      return window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [

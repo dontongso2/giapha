@@ -93,4 +93,12 @@ h2 {
     background-size: cover;
     transition: 1s opacity;
 }
+@media screen and (max-width: 1440px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+}
 </style>

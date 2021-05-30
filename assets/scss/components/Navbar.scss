@@ -27,7 +27,7 @@
                 text-transform: uppercase;
                 margin-left: 1.5rem;
                 position: relative;
-                &::after {
+                .border-bot {
                     position: absolute;
                     bottom: 0;
                     left: 0;
@@ -37,12 +37,12 @@
                     background: $cl-primary;
                     transition: all .5s;
                 }
-                &:hover::after {
+                &:hover .border-bot {
                     width: 100%;
                 }
-            }
-            li.active::after {
-                width: 100%;
+                a.nuxt-link-active + span {
+                    width: 100%;
+                }
             }
         }
         .li-name li {

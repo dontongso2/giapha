@@ -23,6 +23,7 @@ import IntroBrand from '~/components/IntroBrand.vue';
 import Car from '~/components/Car.vue';
 
 export default {
+   transition: 'home',
     components: {
         IntroBrand, Car
     },

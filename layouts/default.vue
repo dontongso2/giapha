@@ -1,8 +1,10 @@
 <template>
   <div class="layout-default theme-light">
-    <navbar/>
+    <Navbar/>
     <Nuxt />
     <Footer />
+
+    <transition name="home"></transition>
   </div>
 </template>
 

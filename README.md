@@ -1,6 +1,9 @@
 # GiapHa-Auto
 
-## Build Setup
+# Can see this at live demo without build
+https://giapha-woad.vercel.app/
+
+## Or build local setup
 
 ```bash
 # install dependencies

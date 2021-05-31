@@ -18,7 +18,7 @@
                 Share capital duly paid up Euros 130.000.000<br/>
                 P Iva 00591801204  Fiscal code 03049840378<br/>
                 A sole shareholder company part of Audi Group <br/>
-                Registered email address: giapha@gmail.com</p>
+                Registered email address: giapha2905@gmail.com</p>
 
                 <span>*This contents were copy from internet.</span>
             </div>

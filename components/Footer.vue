@@ -14,7 +14,7 @@
                 All rights reserved. VAT no. IT 325432465342</p>
             </div>
             <div class="footer-right d-flex">
-                <span>*This website was create without business purpose <br/> If any owner of content/background used in this website is unhappy,please contact us via mail giapha@gmail.com</span>
+                <span>*This website was create without business purpose <br/> If any owner of content/background used in this website is unhappy,please contact us via mail giapha2905@gmail.com</span>
             </div>
         </div>
     </footer>

@@ -55,6 +55,9 @@ export default {
       return this.$store.state.users;
     },
   },
+  mounted() {
+        this.makeToast("info", "Hint!", "You can create new account or use this email: giapha2905@gmail.com password: Hahuygiap95", true);
+  },
   methods: {
     async handleSubmit() {
       const isValid = await this.$validator.validate();
@@ -73,10 +76,10 @@ export default {
           }
         }
         this.makeToast("danger", "Error!", "Email or password was wrong!");
-        this.makeToast("info", "Hint!", "You can create new account or use email: giapha@gmail.com password: Hahuygiap95", true);
+        this.makeToast("info", "Hint!", "You can create new account or use email: giapha2905@gmail.com password: Hahuygiap95", true);
       }
       else
-        this.makeToast("info", "Hint!", "You can create new account or use this email: giapha@gmail.com password: Hahuygiap95", true);
+        this.makeToast("info", "Hint!", "You can create new account or use this email: giapha2905@gmail.com password: Hahuygiap95", true);
 
     },
     makeToast(variant = "danger", title = "", content = "", noClose = false) {

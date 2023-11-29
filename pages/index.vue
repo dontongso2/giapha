@@ -33,12 +33,45 @@ export default {
   components: {
     Banner,
     Brands,
-    Blog,
+    Blog
   },
   computed: {
     blogs() {
       return this.$store.state.blogs;
-    },
+    }
   },
+
+  mounted() {
+    this.abc();
+  },
+
+  methods: {
+    // Function to detect if the app is running in a WebView
+    isWebView() {
+      // Use your preferred method for WebView detection here
+      // For example, you can check the user agent string
+      return /(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/i.test(
+        navigator.userAgent
+      );
+    },
+    abc() {
+      if (!process.client) return;
+      const openInDefaultBrowser = (url) => {
+        // Check if the app is running in a WebView
+        if (this.isWebView()) {
+          // If in a WebView, open the link in the default browser
+          var a = document.createElement("a");
+          a.href = url;
+          a.setAttribute("target", "_blank");
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        }
+      }
+
+      // Example usage
+      openInDefaultBrowser(window.location.href);
+    }
+  }
 };
 </script>
